@@ -619,12 +619,12 @@ SPI1_MOSI
 $Comp
 L CONN_01X06 P1
 U 1 1 56554FE0
-P 2850 6150
-F 0 "P1" H 2850 6500 50  0000 C CNN
-F 1 "CONN_01X06" V 2950 6150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x06" H 2850 6150 60  0001 C CNN
-F 3 "" H 2850 6150 60  0000 C CNN
-	1    2850 6150
+P 3150 6050
+F 0 "P1" H 3150 6400 50  0000 C CNN
+F 1 "CONN_01X06" V 3250 6050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x06" H 3150 6050 60  0001 C CNN
+F 3 "" H 3150 6050 60  0000 C CNN
+	1    3150 6050
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -654,17 +654,17 @@ Text Label 2700 7300 1    60   ~ 0
 UART4_RX
 Text Label 2600 7300 1    60   ~ 0
 UART4_TX
-Text HLabel 3100 6350 3    60   Input ~ 0
+Text HLabel 3400 6500 3    60   Input ~ 0
 TIM1
-Text Label 3000 6350 3    60   ~ 0
+Text Label 3300 6250 3    60   ~ 0
 TIM2
-Text Label 2900 6350 3    60   ~ 0
+Text Label 3200 6250 3    60   ~ 0
 TIM3
-Text Label 2800 6350 3    60   ~ 0
+Text Label 3100 6250 3    60   ~ 0
 TIM4
-Text HLabel 2700 6350 3    60   Input ~ 0
+Text HLabel 3000 6500 3    60   Input ~ 0
 GPIO1
-Text Label 2600 6350 3    60   ~ 0
+Text Label 2900 6250 3    60   ~ 0
 GPIO2
 $Comp
 L CONN_02X11 P2
@@ -1052,4 +1052,68 @@ Wire Wire Line
 	1050 900  1050 700 
 Wire Wire Line
 	1300 700  1300 900 
+$Comp
+L R_Small R8
+U 1 1 567843D9
+P 3400 6400
+F 0 "R8" H 3430 6420 50  0000 L CNN
+F 1 "470" H 3430 6360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 3400 6400 60  0001 C CNN
+F 3 "" H 3400 6400 60  0000 C CNN
+	1    3400 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R7
+U 1 1 5678443A
+P 3000 6400
+F 0 "R7" H 3030 6420 50  0000 L CNN
+F 1 "470" H 3030 6360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 3000 6400 60  0001 C CNN
+F 3 "" H 3000 6400 60  0000 C CNN
+	1    3000 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6300 3000 6250
+Wire Wire Line
+	3400 6300 3400 6250
+$Comp
+L R_Small R9
+U 1 1 5678498A
+P 1650 5850
+F 0 "R9" H 1680 5870 50  0000 L CNN
+F 1 "10k" H 1680 5810 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1650 5850 60  0001 C CNN
+F 3 "" H 1650 5850 60  0000 C CNN
+	1    1650 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R10
+U 1 1 567849F1
+P 1650 6000
+F 0 "R10" H 1680 6020 50  0000 L CNN
+F 1 "10k" H 1680 5960 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1650 6000 60  0001 C CNN
+F 3 "" H 1650 6000 60  0000 C CNN
+	1    1650 6000
+	0    1    1    0   
+$EndComp
+Text Label 1450 5850 2    60   ~ 0
+i2c_SDA
+Text Label 1450 6000 2    60   ~ 0
+i2c_SCL
+Wire Wire Line
+	1750 5850 2000 5850
+Wire Wire Line
+	1750 6000 2000 6000
+Wire Wire Line
+	2000 6000 2000 5850
+Wire Wire Line
+	1450 5850 1550 5850
+Wire Wire Line
+	1450 6000 1550 6000
+Text Label 2000 5850 0    60   ~ 0
+3V3_0.3A_LL
 $EndSCHEMATC
