@@ -366,42 +366,35 @@ F 3 "" H 4600 3500 60  0000 C CNN
 	1    4600 3500
 	1    0    0    -1  
 $EndComp
-Text HLabel 2150 1700 0    60   Input ~ 0
-TIM1
 Text Label 2150 1800 2    60   ~ 0
 TIM2
-Text Label 5450 1700 2    60   ~ 0
+Text Label 5450 1800 2    60   ~ 0
 TIM2
 Text Label 2150 1900 2    60   ~ 0
 TIM3
-Text Label 5450 1800 2    60   ~ 0
+Text Label 5450 1900 2    60   ~ 0
 TIM3
 Text Label 2150 2000 2    60   ~ 0
 TIM4
-Text Label 5450 1900 2    60   ~ 0
+Text Label 5450 2000 2    60   ~ 0
 TIM4
-NoConn ~ 5450 2000
 Text HLabel 2150 2100 0    60   Input ~ 0
 GPIO1
-Text Label 2150 2200 2    60   ~ 0
-GPIO2
-Text Label 5450 2100 2    60   ~ 0
-GPIO2
 Text Label 2150 2300 2    60   ~ 0
 GPIO3
-Text Label 5450 2200 2    60   ~ 0
+Text Label 5450 2100 2    60   ~ 0
 GPIO3
 Text Label 2150 2400 2    60   ~ 0
 GPIO4
-Text Label 5450 2300 2    60   ~ 0
+Text Label 5450 2200 2    60   ~ 0
 GPIO4
 Text Label 2150 2500 2    60   ~ 0
 GPIO5
-Text Label 5450 2400 2    60   ~ 0
+Text Label 5450 2300 2    60   ~ 0
 GPIO5
 Text Label 2150 2600 2    60   ~ 0
 GPIO6
-Text Label 5450 2500 2    60   ~ 0
+Text Label 5450 2400 2    60   ~ 0
 GPIO6
 NoConn ~ 5450 2600
 Text Label 2150 2700 2    60   ~ 0
@@ -654,8 +647,8 @@ Text Label 2700 7300 1    60   ~ 0
 UART4_RX
 Text Label 2600 7300 1    60   ~ 0
 UART4_TX
-Text HLabel 3400 6500 3    60   Input ~ 0
-TIM1
+Text HLabel 2900 6500 3    60   Input ~ 0
+GPIO2
 Text Label 3300 6250 3    60   ~ 0
 TIM2
 Text Label 3200 6250 3    60   ~ 0
@@ -664,8 +657,6 @@ Text Label 3100 6250 3    60   ~ 0
 TIM4
 Text HLabel 3000 6500 3    60   Input ~ 0
 GPIO1
-Text Label 2900 6250 3    60   ~ 0
-GPIO2
 $Comp
 L CONN_02X11 P2
 U 1 1 5655567A
@@ -1055,12 +1046,12 @@ Wire Wire Line
 $Comp
 L R_Small R8
 U 1 1 567843D9
-P 3400 6400
-F 0 "R8" H 3430 6420 50  0000 L CNN
-F 1 "470" H 3430 6360 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 3400 6400 60  0001 C CNN
-F 3 "" H 3400 6400 60  0000 C CNN
-	1    3400 6400
+P 2900 6400
+F 0 "R8" H 2930 6420 50  0000 L CNN
+F 1 "470" H 2930 6360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2900 6400 60  0001 C CNN
+F 3 "" H 2900 6400 60  0000 C CNN
+	1    2900 6400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1077,7 +1068,7 @@ $EndComp
 Wire Wire Line
 	3000 6300 3000 6250
 Wire Wire Line
-	3400 6300 3400 6250
+	2900 6300 2900 6250
 $Comp
 L R_Small R9
 U 1 1 5678498A
@@ -1116,4 +1107,13 @@ Wire Wire Line
 	1450 6000 1550 6000
 Text Label 2000 5850 0    60   ~ 0
 3V3_0.3A_LL
+Text Label 2150 1700 2    60   ~ 0
+TIM1
+Text Label 5450 1700 2    60   ~ 0
+TIM1
+NoConn ~ 5450 2500
+Text HLabel 2150 2200 0    60   Input ~ 0
+GPIO2
+Text Label 3400 6250 3    60   ~ 0
+TIM1
 $EndSCHEMATC

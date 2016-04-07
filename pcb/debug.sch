@@ -46,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 7050 7000 0    197  ~ 0
-debug
+debug v3
 $Sheet
 S 9300 2050 1200 3400
 U 564009DE
@@ -54,7 +54,7 @@ F0 "ExpansionPort" 60
 F1 "ExpansionPort.sch" 60
 F2 "+5V" I L 9300 3800 60 
 F3 "GND" I R 10500 3800 60 
-F4 "TIM1" I L 9300 2200 60 
-F5 "GPIO1" I L 9300 2600 60 
+F4 "GPIO1" I L 9300 2600 60 
+F5 "GPIO2" I L 9300 2700 60 
 $EndSheet
 $EndSCHEMATC
