@@ -67,7 +67,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x010f0_80000001)
+      (layerselection 0x010fc_80000001)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -7480,7 +7480,7 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 115.85 89.4) (xy 132.7 89.4) (xy 132.75 94.25) (xy 115.3 94.2) (xy 115.75 89.35)
+        (xy 115.85 89.4) (xy 132.7 89.4) (xy 132.85 93.65) (xy 115.4 93.6) (xy 115.75 89.35)
       )
     )
   )
