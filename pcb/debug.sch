@@ -45,7 +45,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 7050 7000 0    197  ~ 0
+Text Notes 7350 7550 0    118  ~ 0
 debug v3
 $Sheet
 S 9300 2050 1200 3400
@@ -57,4 +57,6 @@ F3 "GND" I R 10500 3800 60
 F4 "GPIO1" I L 9300 2600 60 
 F5 "GPIO2" I L 9300 2700 60 
 $EndSheet
+Text Notes 7050 7050 0    60   ~ 0
+Copyright 2016 Chickadee Tech LLC, <add attributions here>\n\nThis work is licensed under the Creative Commons Attribution 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/\nor send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 $EndSCHEMATC
